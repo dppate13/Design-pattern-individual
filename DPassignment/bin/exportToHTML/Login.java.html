@@ -44,8 +44,8 @@ Login.java</font>
 	<span class="s0">private </span><span class="s1">JButton buttonExit = </span><span class="s0">new </span><span class="s1">JButton()</span><span class="s0">;</span>
 	<span class="s0">private </span><span class="s1">JTextField UserNameText = </span><span class="s0">new </span><span class="s1">JTextField()</span><span class="s0">;</span>
 	<span class="s0">private </span><span class="s1">JPasswordField PasswordField = </span><span class="s0">new </span><span class="s1">JPasswordField()</span><span class="s0">;</span>
-	<span class="s0">private </span><span class="s1">JRadioButton BuyerRadio = </span><span class="s0">new </span><span class="s1">JRadioButton()</span><span class="s0">;</span>
-	<span class="s0">private </span><span class="s1">JRadioButton SellerRadio = </span><span class="s0">new </span><span class="s1">JRadioButton()</span><span class="s0">;</span>
+	<span class="s0">private </span><span class="s1">JRadioButton BuyerField = </span><span class="s0">new </span><span class="s1">JRadioButton()</span><span class="s0">;</span>
+	<span class="s0">private </span><span class="s1">JRadioButton SellerField = </span><span class="s0">new </span><span class="s1">JRadioButton()</span><span class="s0">;</span>
 	<span class="s0">private </span><span class="s1">ButtonGroup buttonGroup1 = </span><span class="s0">new </span><span class="s1">ButtonGroup()</span><span class="s0">;</span>
 <span class="s4">////// Attributes Added By me</span>
 	<span class="s0">private </span><span class="s1">String UserBox = </span><span class="s0">null;</span>
@@ -74,21 +74,21 @@ Login.java</font>
 		<span class="s1">buttonExit.addActionListener(e -&gt; buttonExit_actionPerformed())</span><span class="s0">;</span>
 		<span class="s1">UserNameText.setBounds(</span><span class="s0">new </span><span class="s1">Rectangle(</span><span class="s5">119</span><span class="s0">, </span><span class="s5">52</span><span class="s0">, </span><span class="s5">144</span><span class="s0">, </span><span class="s5">22</span><span class="s1">))</span><span class="s0">;</span>
 		<span class="s1">PasswordField.setBounds(</span><span class="s0">new </span><span class="s1">Rectangle(</span><span class="s5">118</span><span class="s0">, </span><span class="s5">119</span><span class="s0">, </span><span class="s5">147</span><span class="s0">, </span><span class="s5">22</span><span class="s1">))</span><span class="s0">;</span>
-		<span class="s1">BuyerRadio.setSelected(</span><span class="s0">true</span><span class="s1">)</span><span class="s0">;</span>
-		<span class="s1">BuyerRadio.setText(</span><span class="s6">&quot;Buyer&quot;</span><span class="s1">)</span><span class="s0">;</span>
-		<span class="s1">BuyerRadio.setBounds(</span><span class="s0">new </span><span class="s1">Rectangle(</span><span class="s5">37</span><span class="s0">, </span><span class="s5">164</span><span class="s0">, </span><span class="s5">103</span><span class="s0">, </span><span class="s5">26</span><span class="s1">))</span><span class="s0">;</span>
-		<span class="s1">SellerRadio.setText(</span><span class="s6">&quot;Seller&quot;</span><span class="s1">)</span><span class="s0">;</span>
-		<span class="s1">SellerRadio.setBounds(</span><span class="s0">new </span><span class="s1">Rectangle(</span><span class="s5">177</span><span class="s0">, </span><span class="s5">162</span><span class="s0">, </span><span class="s5">103</span><span class="s0">, </span><span class="s5">26</span><span class="s1">))</span><span class="s0">;</span>
+		<span class="s1">BuyerField.setSelected(</span><span class="s0">true</span><span class="s1">)</span><span class="s0">;</span>
+		<span class="s1">BuyerField.setText(</span><span class="s6">&quot;Buyer&quot;</span><span class="s1">)</span><span class="s0">;</span>
+		<span class="s1">BuyerField.setBounds(</span><span class="s0">new </span><span class="s1">Rectangle(</span><span class="s5">37</span><span class="s0">, </span><span class="s5">164</span><span class="s0">, </span><span class="s5">103</span><span class="s0">, </span><span class="s5">26</span><span class="s1">))</span><span class="s0">;</span>
+		<span class="s1">SellerField.setText(</span><span class="s6">&quot;Seller&quot;</span><span class="s1">)</span><span class="s0">;</span>
+		<span class="s1">SellerField.setBounds(</span><span class="s0">new </span><span class="s1">Rectangle(</span><span class="s5">177</span><span class="s0">, </span><span class="s5">162</span><span class="s0">, </span><span class="s5">103</span><span class="s0">, </span><span class="s5">26</span><span class="s1">))</span><span class="s0">;</span>
 		<span class="s0">this</span><span class="s1">.getContentPane().add(jLabel1</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
 		<span class="s0">this</span><span class="s1">.getContentPane().add(jLabel2</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
 		<span class="s0">this</span><span class="s1">.getContentPane().add(loginButton</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
 		<span class="s0">this</span><span class="s1">.getContentPane().add(buttonExit</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
 		<span class="s0">this</span><span class="s1">.getContentPane().add(UserNameText</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
 		<span class="s0">this</span><span class="s1">.getContentPane().add(PasswordField</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
-		<span class="s0">this</span><span class="s1">.getContentPane().add(BuyerRadio</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
-		<span class="s0">this</span><span class="s1">.getContentPane().add(SellerRadio</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
-		<span class="s1">buttonGroup1.add(BuyerRadio)</span><span class="s0">;</span>
-		<span class="s1">buttonGroup1.add(SellerRadio)</span><span class="s0">;</span>
+		<span class="s0">this</span><span class="s1">.getContentPane().add(BuyerField</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
+		<span class="s0">this</span><span class="s1">.getContentPane().add(SellerField</span><span class="s0">, null</span><span class="s1">)</span><span class="s0">;</span>
+		<span class="s1">buttonGroup1.add(BuyerField)</span><span class="s0">;</span>
+		<span class="s1">buttonGroup1.add(SellerField)</span><span class="s0">;</span>
 	<span class="s1">}</span>
 
 	<span class="s0">private void </span><span class="s1">loginButton_actionPerformed(ActionEvent e) {</span>
@@ -96,7 +96,7 @@ Login.java</font>
 		<span class="s1">Exit = </span><span class="s0">false;</span>
 		<span class="s1">System.out.println(</span><span class="s6">&quot;login clicked&quot;</span><span class="s1">)</span><span class="s0">;</span>
 		<span class="s0">try </span><span class="s1">{</span>
-			<span class="s0">if </span><span class="s1">(BuyerRadio.isSelected())</span><span class="s4">//// buyer</span>
+			<span class="s0">if </span><span class="s1">(BuyerField.isSelected())</span><span class="s4">//// buyer</span>
 			<span class="s1">{</span>
 				<span class="s1">UserType = UserInfoItem.TYPE_USER.Buyer</span><span class="s0">; </span><span class="s4">/// 0 for buyer</span>
 				<span class="s1">file = </span><span class="s0">new </span><span class="s1">BufferedReader(</span><span class="s0">new </span><span class="s1">FileReader(</span><span class="s6">&quot;BuyerInfo.txt&quot;</span><span class="s1">))</span><span class="s0">;</span>
